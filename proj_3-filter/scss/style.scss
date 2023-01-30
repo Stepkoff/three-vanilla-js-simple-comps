@@ -1,0 +1,65 @@
+@use 'sass:math';
+@import './fonts.scss';
+@import './reset.scss';
+@import './mixins.scss';
+
+
+html, body {
+    min-height: 100%;
+    font-family: Montserrat, sans-serif;
+}
+.container {
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  .leftMenu {
+    flex: 1;
+    .search {
+      padding: 5px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    h2 {
+      color: #555;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .categories-container {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      span {
+        margin-bottom: 10px;
+        cursor: pointer;
+        padding: 5px;
+      }
+    }
+    h3 {
+      font-size: 24px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+  }
+  .content {
+    flex: 4;
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 10px;
+      .product {
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, .3);
+        padding: 10px;
+        border-radius: 10px;
+        img {
+          height: 200px;
+          display: block;
+          margin-inline: auto;
+          margin-bottom: 10px;
+        }
+        .productName {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
+  font-weight: 400;
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  background-color: #22223b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.btn {
+  background-color: #592D86;
+  color: white;
+  border: none;
+  padding: 8px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.game {
+  display: block;
+}
+.game .content {
+  padding: 20px;
+  background-color: white;
+  min-height: 300px;
+}
+.game .content .question {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+}
+.game .content .answer {
+  margin: 0 0 15px 0;
+  font-weight: 500;
+}
+.game .submit-answer {
+  display: block;
+}
+
+.result {
+  min-height: 335px;
+  background-color: white;
+  padding: 20px;
+  display: none;
+  place-content: center;
+  text-align: center;
+  justify-items: center;
+}
+.result p {
+  margin: 0 0 15px 0;
+}
+.result h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+}
+.result .correct-answers {
+  color: green;
+  font-weight: 600;
+}
+.result .wrong-answers {
+  color: red;
+  font-weight: 600;
+}
+.result .score {
+  color: #000;
+  font-weight: 600;
+}
+.result .play-again {
+  display: inline-block;
+}

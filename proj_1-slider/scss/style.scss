@@ -1,0 +1,66 @@
+@use 'sass:math';
+@import './fonts.scss';
+@import './reset.scss';
+@import './mixins.scss';
+
+
+body{
+    background-color: #927df1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    width: min(100%, 800px);
+    margin-inline: auto;
+    padding: 0 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.top{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.arrow{
+    height: 80px;
+    cursor: pointer;
+}
+
+.right{
+    transform: rotate(180deg);
+}
+
+.frame{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: .5s ease all;
+}
+.sliderImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bottom {
+    display: flex;
+    gap: 10px;
+    .button {
+        outline: 2px solid rgba(255, 255, 255, 0.5);
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+        padding: 2px;
+        cursor: pointer;
+    }
+}
